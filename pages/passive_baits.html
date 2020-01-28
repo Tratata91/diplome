@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Magicfish.by</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/flexslider.css">
+        <link rel="stylesheet" href="../styles/main.css">
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="background"></div>
+        <div class="container">
+            <header class="header">
+                <div class="upper_section">
+                    <div class="login_section">
+                        <button class="btn btn_1 btn-primary btn-sm js-popup-button">Войти</button>
+                        <button class="btn btn_2 btn-primary btn-sm second-button">Регистрация</button>
+                    </div>
+                    <div class="popup-wrapper js-popup-wrapper">
+                        <div class="popup">
+                            <div class="popup_close js-popup-close"></div>
+                                <form role="form">
+                                    <p class="popup_title">Личный кабинет</p>
+                                    <div class="form-group">
+                                        <label for="email">Ваш E-Mail:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Введите ваш e-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Ваш пароль:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Введите ваш пароль">
+                                    </div>
+                                    <button type="button" class="btn btn-success">Войти</button>
+                                </form>
+                        </div>
+                    </div>
+                    <div class="popup-wrapper second-wrapper">
+                        <div class="popup ">
+                            <div class="popup_close second-close"></div>
+                                <form role="form">
+                                    <p class="popup_title">Зарегистрироваться</p>
+                                    <div class="form-group">
+                                        <label for="email">Ваш E-Mail:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Введите ваш e-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Ваш пароль:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Введите ваш пароль">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Подтвердите пароль:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Подтвердите ваш пароль">
+                                    </div>
+                                    <button type="button" class="btn btn-success">Регистрация</button>
+                                </form>
+                        </div>
+                    </div>
+                    <div class="search_section">
+                        <input type="search">
+                        <button class="btn btn_3 btn-success btn-sm">Поиск</button>
+                    </div>
+                    <div class="basket_section">
+                        <img src="../assets/shoping-cart-min.jpg" alt="корзина покупок" title="корзина покупок">
+                        <button class="btn btn-success btn-sm">В корзину</button>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <a class="navbar-brand">
+                        <img src="../assets/Logo.jpg" alt="Logo" title="Magic Fish Logo">
+                        MagicFish.by</a>
+                    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"> Главная <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link " href="../pages/catalog.html">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../pages/payment.html">Оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../pages/about_us.html">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="center">
+                    <div class="aside_left">
+                        <h1>Каталог</h1>
+                        <ul>
+                            <li>
+                                <a href="../pages/active_baits.html">
+                                    Активные приманки
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/passive_baits.html">
+                                    Пассивные приманки
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="main_content">
+                        <h1>Пассивные приманки "Magic Fish"</h1>
+                    <div class="active_cards">
+                    <div class="card">
+                        <a href="../pages/products/aji meat.html">
+                            <div class="card_picture">
+                                <img src="../assets/passive_baits/aji meat 1,9.jpg" alt="Magic Fish Aji Meat" title="Magic Fish Aji Meat">
+                            </div>
+                            <div class="card_content">
+                                Aji Meat 1.9"
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../pages/products/ax craw.html">
+                            <div class="card_picture">
+                                <img src="../assets/passive_baits/Ax craw 1,2.jpg" alt="Magic Fish Ax Craw" title="Magic Fish Ax Craw">
+                            </div>
+                            <div class="card_content">
+                                Ax Craw 1.2"
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../pages/products/dolive.html">
+                            <div class="card_picture">
+                                <img src="../assets/passive_baits/dolive 3-4.jpg" alt="Magic Fish Dolive" title="Magic Fish Dolive">
+                            </div>
+                            <div class="card_content">
+                                Dolive 3" (с усами 4")
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../pages/products/dolive craw.html">
+                            <div class="card_picture">
+                                <img src="../assets/passive_baits/dolive craw 2.jpg" alt="Magic Fish Dolive Craw" title="Magic Fish Dolive Craw">
+                            </div>
+                            <div class="card_content">
+                                Dolive Craw 2" (с усами 3")
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="../pages/products/fish tail.html">
+                            <div class="card_picture">
+                                <img src="../assets/passive_baits/Fish tail 3.jpg" alt="Magic Fish Fish Tail" title="Magic FishFish Tail">
+                            </div>
+                            <div class="card_content">
+                                Fish Tail 3"
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/flit 2.jpg" alt="Magic Fish Flit" title="Magic Fish Flit">
+                        </div>
+                        <div class="card_content">
+                            Flit 2"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/kazarka 0,75.jpg" alt="Magic Fish Kazarka" title="Magic Fish Kazarka">
+                        </div>
+                        <div class="card_content">
+                            Kazarka 0.75"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/Nymph 1,1.jpg" alt="Magic Fish Nymph" title="Magic Fish Nymph">
+                        </div>
+                        <div class="card_content">
+                            Nymph 1.1"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/polaris 1,2.jpg" alt="Magic Fish Polaris" title="Magic Fish Polaris">
+                        </div>
+                        <div class="card_content">
+                            Polaris 1.2"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/polaris 2.jpg" alt="Magic Fish Polaris" title="Magic Fish Polaris">
+                        </div>
+                        <div class="card_content">
+                            Polaris 2"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/Scissor comb 2.jpg" alt="Magic Fish Scissor Comb" title="Magic Fish Scissor Comb">
+                        </div>
+                        <div class="card_content">
+                            Scissor Comb 2"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/sexy impact 2,8.jpg" alt="Magic Fish Sexy Impact" title="Magic Fish Sexy Impact">
+                        </div>
+                        <div class="card_content">
+                            Sexy Impact 2.8"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/strekoza 1.jpg" alt="Magic Fish Strekoza" title="Magic Fish Strekoza">
+                        </div>
+                        <div class="card_content">
+                            Strekoza 1"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/tanta 3.jpg" alt="Magic Fish Tanta" title="Magic Fish Tanta">
+                        </div>
+                        <div class="card_content">
+                            Tanta 3"
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_picture">
+                            <img src="../assets/passive_baits/vesnyanka 0,8.jpg" alt="Magic Fish Vesnyanka" title="Magic Fish Vesnyanka">
+                        </div>
+                        <div class="card_content">
+                            Vesnyanka 0.8"
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </main>
+        </div>
+        <div class="container">
+            <footer class="footer">
+                <div class="container footer_inner">
+                    <div class="footer_col">
+                        <div class="footer_inner">
+                            <div class="footer_col">
+                            <div class="footer_nav">
+                                <ul>
+                                    <li>
+                                        <a href="../index.html">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li>    
+                                        <a href="../pages/catalog.html">
+                                            Каталог
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pages/payment.html">
+                                            Оплата
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../pages/about_us.html">
+                                        О нас
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                            <div class="footer_col">
+                                <h3 class="footer_title">Рыболовные приманки "Magic Fish"</h3>
+                                <p>Изготовление силиконовых приманок</p>
+                                <p> &copy MAGICFISH.BY, 2020 гг.</p>
+                            </div>
+                            
+                            <ul class="footer_col">
+                                <li>
+                                    <p>Группа "ВКонтакте"</p>
+                                    <a href="https://vk.com/magic_fish" class="vk_group">https://vk.com/magic_fish</a>
+                                </li>
+                                <li>
+                                    <p>Наш Instagram</p>
+                                    <a href="https://www.instagram.com/magic_fish_bel/">https://www.instagram.com/magic_fish_bel/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <script src="../js/common.js"></script>
+        </body>
+        </html>

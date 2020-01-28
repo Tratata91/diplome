@@ -1,0 +1,65 @@
+.header{ 
+    
+    .upper_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        
+        @media screen and (max-width: 534px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        
+        .login_section {
+            display: flex;
+            justify-content: flex-start;
+            flex-grow: 1;
+
+            @media screen and (max-width: 534px) {
+                padding-bottom: 10px;
+              }
+            
+            .btn_1 {
+                margin-right: 3%;
+            }
+        }
+
+        .search_section {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            & input {
+                border: 2px solid $orange;
+            }
+            
+            @media screen and (max-width: 534px) {
+                padding-bottom: 10px;
+              }
+        }
+
+        .basket_section {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .navbar {
+        font-size: 24px;
+        img {
+            height: 20px;
+        }
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 30px;
+    }
+}

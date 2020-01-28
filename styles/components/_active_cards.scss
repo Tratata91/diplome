@@ -1,0 +1,35 @@
+.active_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+        .card {
+            width: 25%;
+            border: 1px solid black;
+            padding: 1%;
+            margin: 1%;
+            text-align: center;
+            
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: $orange;
+            }
+                
+                    img {
+                        max-width: 100%;
+                        
+                    }
+                
+        }
+
+        .card:hover {
+            box-shadow: 1px 1px 10px $orange;
+            cursor: pointer;
+        }
+}
